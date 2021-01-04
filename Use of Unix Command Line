@@ -1,0 +1,268 @@
+(base) Shivangis-MacBook-Air:Calculator shivangi$ cd ~
+(base) Shivangis-MacBook-Air:~ shivangi$ cd desktop
+(base) Shivangis-MacBook-Air:desktop shivangi$ mkdir BMI Calculator
+mkdir: Calculator: File exists
+(base) Shivangis-MacBook-Air:desktop shivangi$ rm BMI
+rm: BMI: is a directory
+(base) Shivangis-MacBook-Air:desktop shivangi$ mkdir BMI_Calculator
+(base) Shivangis-MacBook-Air:desktop shivangi$ open -a Atom BMI_Calculator
+(base) Shivangis-MacBook-Air:desktop shivangi$ cd BMI_Calculator
+(base) Shivangis-MacBook-Air:BMI_Calculator shivangi$ touch server.js
+(base) Shivangis-MacBook-Air:BMI_Calculator shivangi$ init npm
+bash: init: command not found
+(base) Shivangis-MacBook-Air:BMI_Calculator shivangi$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (bmi_calculator) 
+version: (1.0.0) 
+description: This is a simple BMI Calculator that calculates the BMI of a person based on his weight and height parameters.
+entry point: (server.js) 
+test command: 
+git repository: 
+keywords: 
+author: Shivangi Singh
+license: (ISC) 
+About to write to /Users/shivangi/Desktop/BMI_Calculator/package.json:
+
+{
+  "name": "bmi_calculator",
+  "version": "1.0.0",
+  "description": "This is a simple BMI Calculator that calculates the BMI of a person based on his weight and height parameters.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Shivangi Singh",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) 
+
+
+   ╭─────────────────────────────────────────────────────────────────╮
+   │                                                                 │
+   │      New patch version of npm available! 6.14.9 → 6.14.10       │
+   │   Changelog: https://github.com/npm/cli/releases/tag/v6.14.10   │
+   │                Run npm install -g npm to update!                │
+   │                                                                 │
+   ╰─────────────────────────────────────────────────────────────────╯
+
+(base) Shivangis-MacBook-Air:BMI_Calculator shivangi$ npm install express
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN bmi_calculator@1.0.0 No repository field.
+
++ express@4.17.1
+added 50 packages from 37 contributors and audited 50 packages in 3.904s
+found 0 vulnerabilities
+
+(base) Shivangis-MacBook-Air:BMI_Calculator shivangi$ nodemon BMI_Calculator
+[nodemon] 2.0.6
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node BMI_Calculator server.js`
+internal/modules/cjs/loader.js:883
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/shivangi/Desktop/BMI_Calculator/server.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node BMI_Calculator server.js`
+internal/modules/cjs/loader.js:883
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/shivangi/Desktop/BMI_Calculator/server.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+[nodemon] app crashed - waiting for file changes before starting...
+^C(base) Shivangis-MacBook-Air:BMI_Calculator shivangi$ 
+(base) Shivangis-MacBook-Air:BMI_Calculator shivangi$ nodemon BMI_Calculator
+[nodemon] 2.0.6
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node BMI_Calculator server.js`
+internal/modules/cjs/loader.js:883
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/shivangi/Desktop/BMI_Calculator/server.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+[nodemon] app crashed - waiting for file changes before starting...
+^C(base) Shivangis-MacBook-Air:BMI_Calculator shivangi$ nodemon calculator.js
+[nodemon] 2.0.6
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node calculator.js`
+The server has started on the port 3090
+^C(base) Shivangis-MacBook-Air:BMI_Calculator shivangi$ touch index.html
+(base) Shivangis-MacBook-Air:BMI_Calculator shivangi$ nodemon calculator.js
+[nodemon] 2.0.6
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node calculator.js`
+The server has started on the port 3090
+[nodemon] restarting due to changes...
+[nodemon] starting `node calculator.js`
+The server has started on the port 3090
+^C(base) Shivangis-MacBook-Air:BMI_Calculator shivangi$ install npm body-parser
+install: npm: No such file or directory
+(base) Shivangis-MacBook-Air:BMI_Calculator shivangi$ npm install body-parser
+npm WARN bmi_calculator@1.0.0 No repository field.
+
++ body-parser@1.19.0
+updated 1 package and audited 51 packages in 2.166s
+found 0 vulnerabilities
+
+(base) Shivangis-MacBook-Air:BMI_Calculator shivangi$ nodemon calculator.js
+[nodemon] 2.0.6
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node calculator.js`
+/Users/shivangi/Desktop/BMI_Calculator/calculator.js:5
+app.use(bodyParser.urlencoded({extended : true};));
+                                              ^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node calculator.js`
+/Users/shivangi/Desktop/BMI_Calculator/calculator.js:5
+app.use(bodyParser.urlencoded({extended : true;}));
+                                              ^
+
+SyntaxError: Unexpected token ';'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+c
+^C(base) Shivangis-MacBook-Air:BMI_Calculator shivangi$ 
+(base) Shivangis-MacBook-Air:BMI_Calculator shivangi$ nodemon calculator.js
+[nodemon] 2.0.6
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node calculator.js`
+/Users/shivangi/Desktop/BMI_Calculator/calculator.js:5
+app.use(bodyParser.urlencoded({extended : true;}));
+                                              ^
+
+SyntaxError: Unexpected token ';'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node calculator.js`
+The server has started on the port 3090
+[nodemon] restarting due to changes...
+[nodemon] starting `node calculator.js`
+The server has started on the port 3090
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:558:11)
+    at ServerResponse.header (/Users/shivangi/Desktop/BMI_Calculator/node_modules/express/lib/response.js:771:10)
+    at ServerResponse.send (/Users/shivangi/Desktop/BMI_Calculator/node_modules/express/lib/response.js:170:12)
+    at /Users/shivangi/Desktop/BMI_Calculator/calculator.js:15:27
+    at Layer.handle [as handle_request] (/Users/shivangi/Desktop/BMI_Calculator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/shivangi/Desktop/BMI_Calculator/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/shivangi/Desktop/BMI_Calculator/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/shivangi/Desktop/BMI_Calculator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/shivangi/Desktop/BMI_Calculator/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/shivangi/Desktop/BMI_Calculator/node_modules/express/lib/router/index.js:335:12)
+[nodemon] restarting due to changes...
+[nodemon] starting `node calculator.js`
+The server has started on the port 3090
+[nodemon] restarting due to changes...
+[nodemon] starting `node calculator.js`
+/Users/shivangi/Desktop/BMI_Calculator/calculator.js:20
+  res.send("Your Body Mass Index comes out to be : " + bmi"\n" + conclusion);
+                                                       ^^^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node calculator.js`
+The server has started on the port 3090
+[nodemon] restarting due to changes...
+[nodemon] starting `node calculator.js`
+The server has started on the port 3090
+[nodemon] restarting due to changes...
+[nodemon] starting `node calculator.js`
+The server has started on the port 3090
+[nodemon] restarting due to changes...
+[nodemon] starting `node calculator.js`
+The server has started on the port 3090
+[nodemon] restarting due to changes...
+[nodemon] starting `node calculator.js`
+The server has started on the port 3090
+[nodemon] restarting due to changes...
+[nodemon] starting `node calculator.js`
+The server has started on the port 3090
+^C(base) Shivangis-MacBook-Air:BMI_Calculator shivangi$ cd ..
+(base) Shivangis-MacBook-Air:desktop shivangi$ cd BMI_Calculator
+(base) Shivangis-MacBook-Air:BMI_Calculator shivangi$ nodemon calculator.js
+[nodemon] 2.0.6
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node calculator.js`
+The server has started on the port 3090
+[nodemon] restarting due to changes...
+[nodemon] starting `node calculator.js`
+The server has started on the port 3090
